@@ -45,3 +45,29 @@ Ez egy következő gondolat, bekezdés.
 | 2. sor| 2. sor |
 | 3. sor| 3. sor  
 | 4. sor| 4. sor 
+
+### kódrészlet
+
+```html
+<h1> Példa </h1>
+```
+
+```python
+valtozo = inst(intput("Szám? "))
+```
+
+```css
+p { color: black;}
+```
+
+## inline (szövegformázás)
+
+*dölt*
+
+**félkövér**
+
+~~AltGr+1~~ 
+
+[link szövege](https://www.google.com/search?q=minecraft&oq=minecraft&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQLhixAxiABDIMCAIQABhDGIAEGIoFMgwIAxAAGEMYgAQYigUyCggEEAAYsQMYgAQyCggFEAAYsQMYgAQyDQgGEC4YgwEYsQMYgAQyCggHEAAYsQMYgAQyCggIEAAYsQMYgAQyDQgJEAAYgwEYsQMYgATSAQgxMzgzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
+
+![képszövege](cheat_sheet.png)
