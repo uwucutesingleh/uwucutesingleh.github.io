@@ -33,7 +33,7 @@ Ez egy következő gondolat, bekezdés.
 
 > AltGr + Y
 
-### Vízstines választóvonal
+### Vísztines választóvonal
 
 ---
 
