@@ -32,5 +32,9 @@ p, li {
   
   text-indent: 20px;
 }
-
+table, tr, td{
+  border: 1px solid black;
+  padding: 10px;
+  border-collapse: collapse;
+}
 
