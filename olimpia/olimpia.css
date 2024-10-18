@@ -3,11 +3,10 @@
   padding: 20px;
   border: 1px solid black;
   box-shadow: 5px 5px 10px black;
-  
-  
+  background-color: rgba(234, 200, 150, 0.9);
+  text-align: justify;
 }
-
-#kep1 {
+#kep1{
   height: 150px;
   
   float: right;
@@ -39,6 +38,13 @@ table, tr, td{
 }
 .forras{
   color: red;
+  text-decoration: none;
+  
 }
-
-
+#kep1{
+  margin: 20px;
+}
+.row{
+  padding: 20px;
+  margin: 20px;
+}
