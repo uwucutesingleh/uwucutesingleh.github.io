@@ -36,5 +36,33 @@
 #header div ul li.selected a {
 	background:url(../kepek/bg-nav-selected.png) repeat-x;
 }
-#header div ul li.selected a, #header div ul li a:hover {
-	color:#1bb5ac;
+
+#header div a#logo {
+	display:block;
+	float:left;
+    margin:25px 0 0;
+}
+
+/* Kulso*/
+body {
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/bg-body.jpg);
+	font-size:12px;
+}
+a {
+	outline:none;
+}
+a img {
+	border:0;
+	display:block;
+}
+p {
+	font-size:12px;
+	line-height:24px;
+	letter-spacing:0.05em;
+	color:#959595;
+}
+p a {
+	color:#959595;
+}
