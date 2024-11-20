@@ -47,7 +47,7 @@
 body {
 	margin:0;
 	font-family:Arial, Helvetica, sans-serif;
-	background:url(../images/bg-body.jpg);
+	background:url(../kepek/bg-body.jpg);
 	font-size:12px;
 }
 a {
@@ -65,4 +65,106 @@ p {
 }
 p a {
 	color:#959595;
+}
+/*HTML meg ez és az*/
+#body {
+	margin:0 auto 97px;
+	min-height:1005px;
+	padding:38px 29px 0;
+	width:902px;
+	
+}
+
+#body.home .blog {
+	overflow:hidden;
+}
+#body.home .blog > img {
+	display:block;
+	float:left;
+	margin:45px 0 0;
+}
+#body.home .blog div {
+	float:right;
+	padding:5px 0 0;
+	width:430px;
+}
+#body.home .blog div img {
+	display:block;
+	margin:0 0 0 28px;
+}
+#body.home .blog div h3 {
+	color:#e49e06;
+	font-family:anticregular;
+	font-size:20px;
+	font-weight:400;
+	letter-spacing:.1em;
+	line-height:24px;
+	margin-bottom:3px;
+	text-align:right;
+	text-indent:110px;
+}
+#body.home .blog div p {
+	margin:0;
+	text-align:right;
+}
+#body.home .article {
+	margin:63px 0 0;
+	overflow:hidden;
+}
+#body.home .article div {
+	float:left;
+	padding:0 0 0 25px;
+	width:465px;
+}
+#body.home .article div h3 {
+	color:#e49e06;
+	font-family:anticregular;
+	font-size:20px;
+	font-weight:400;
+	letter-spacing:.1em;
+	line-height:24px;
+	margin:6px 0 3px;
+	text-align:left;
+}
+#body.home .article div p {
+	margin:0 0 24px;
+	text-align:left;
+}
+#body.home .article > img {
+	display:block;
+	float:right;
+	margin:0 44px 0 0;
+}
+#body.subdivisions ul li {
+	margin:0 0 40px;
+	overflow:hidden;
+}
+#body.subdivisions ul li div {
+	float:left;
+	margin:0 45px 0 0;
+	width:585px;
+}
+#body.subdivisions ul li div p {
+	margin:6px 0 0;
+	text-align:justify;
+}
+#body.subdivisions ul li > a {
+	float:right;
+}
+#body.subdivisions ul, #body.blog > div:first-child > ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#body.subdivisions ul li div h3 {
+	color:#e49e06;
+	font-family:anticregular;
+	font-size:20px;
+	font-weight:400;
+	letter-spacing:.05em;
+	line-height:24px;
+	margin:14px 0 0;
+}
+#header div ul li.selected a, #header div ul li a:hover {
+	color:#1bb5ac;
 }
