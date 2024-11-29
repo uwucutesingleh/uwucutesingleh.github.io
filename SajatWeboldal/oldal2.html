@@ -5,64 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Roblox "Gooner" pokol</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<div id="header">
-	<div>
-		<ul>
-			<li class="selected">
-				<a href="index.html">A Gooner válság</a>
-			</li>
-			<li>
-				<a href="oldal2.html">Kockázatok</a>
-			</li>
-			<li>
-                <a href="rubensim.html">Sigmák</a>
-            </li>
-		</ul>
-	</div>
-</div>
+    <header id="header">
+        <div>
+            <a href="index.html" id="logo">
+                <img src="kepek/Ruben_Sim.webp" alt="BenSimon szekszi logo">
+            </a>
+            <ul>
+                <li >
+                    <a href="index.html">A Gooner válság</a>
+                </li>
+                <li class="selected">
+                    <a href="oldal2.html">Kockázatok</a>
+                </li>
+                <li>
+                    <a href="rubensim.html">Sigmák</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-<div id="body" class="subdivisions">
-    <h2>A Kockázatok és veszélyek</h2>
-    <ul>
-        <li>
-            <div>
-                <h3>Fiatalkorúakra ártalmas</h3>
-                <p>
-                    Az Inappropriate Tartalomnak való Kitettség A fiatal játékosok, akik közül sokan 13 évesek sem, könnyen ki vannak téve olyan tartalomnak, amely nem csupán nem megfelelő, hanem mélyen zavaró is. A gyerekek számára, akik talán még nem teljesen értik, hogy mivel találkoznak, ez zűrzavart, érzelmi stresszt vagy akár hosszú távú pszichológiai károkat okozhat.
-                </p>
-            </div>
-            <img src="images/subdivision1.png" alt=""></a>
-        </li>
-        <li>
-            <div>
-                <h3>Pedo probléma</h3>
-                <p>
-                    Ragadozó Viselkedés Bizonyos esetekben azok a felhasználók, akik ERP-ben vesznek részt, nem csupán szórakozásból teszik ezt — előfordulhat, hogy fiatalabb felhasználókat manipulálnak vagy groomingolnak személyes kielégülésük érdekében. Ez lehetőséget ad az online ragadozóknak arra, hogy kihasználják a Roblox nagyban felügyelet nélküli környezetét, ahol az anonimitás elrejtheti a káros szándékokat.
-                </p>
-            </div>
-            <img src="images/subdivision2.png" alt=""></a>
-        </li>
-        <li>
-            <div>
-                <h3>Moderáció semmittevése</h3>
-                <p>
-                    A Platformba Vetett Bizalom Aláásása A Roblox azzal építette fel hírnevét, hogy biztonságos teret biztosít a kreativitásnak és a közösségépítésnek. Az explicit szerepjátékok jelenléte aláássa ezt a bizalmat, és akár a platform hírnevének károsodásához is vezethet a szülők, gondviselők és fejlesztők körében. A közösség a felhasználók által létrehozott tartalomra épít, de ha ezt a tartalmat felnőttek céljaira használják ki, akkor az egész platform integritása veszélybe kerül. 
-                </p>
-            </div>
-            <img src="images/subdivision3.png" alt=""></a>
-        </li>
-        <li>
-            <div>
-                <h3>Toxikus viselkedés</h3>
-                <p>
-                    Toxikus Viselkedés és Közösségi Hatások Azok a közösségek, amelyek lehetővé teszik a nem megfelelő tartalom elterjedését, gyorsan toxikussá válhatnak. Az explicit viselkedések normalizálódása egy olyan térben, amely kiskorúak számára készült, hozzájárulhat a pozitív közösségi interakciók megszűnéséhez és a Roblox által kínált biztonságos terek eróziójához. Az ERP-ben részt vevő játékosok gyakran zárt vagy privát csoportokban találhatók, ahol viselkedésük normalizálódik, ami tovább károsíthatja a Roblox közösségének hírnevét.
-                </p>
-            </div>
-            <img src="images/subdivision4.png" alt=""></a>
-        </li>
-    </ul>
-</div>
+    <div id="body" class="subdivisions">
+        <h1>A Kockázatok és veszélyek</h1>
+        <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-4">
+                <div id="carousel1" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/subdivision1.png" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/subdivision2.png" class="d-block w-100" alt="Image 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="ms-4">
+                    <h3>Fiatalkorúakra ártalmas</h3>
+                    <p>
+                        Az Inappropriate Tartalomnak való Kitettség A fiatal játékosok, akik közül sokan 13 évesek sem, könnyen ki vannak téve olyan tartalomnak, amely nem csupán nem megfelelő, hanem mélyen zavaró is. A gyerekek számára, akik talán még nem teljesen értik, hogy mivel találkoznak, ez zűrzavart, érzelmi stresszt vagy akár hosszú távú pszichológiai károkat okozhat.
+                    </p>
+                </div>
+            </li>
+
+            <li class="d-flex align-items-center mb-4">
+                <div id="carousel2" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/subdivision1.png" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/subdivision2.png" class="d-block w-100" alt="Image 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="ms-4">
+                    <h3>Pedo probléma</h3>
+                    <p>
+                        Ragadozó Viselkedés Bizonyos esetekben azok a felhasználók, akik ERP-ben vesznek részt, nem csupán szórakozásból teszik ezt — előfordulhat, hogy fiatalabb felhasználókat manipulálnak vagy groomingolnak személyes kielégülésük érdekében. Ez lehetőséget ad az online ragadozóknak arra, hogy kihasználják a Roblox nagyban felügyelet nélküli környezetét, ahol az anonimitás elrejtheti a káros szándékokat.
+                    </p>
+                </div>
+            </li>
+
+            <li class="d-flex align-items-center mb-4">
+                <div id="carousel3" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/subdivision1.png" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/subdivision2.png" class="d-block w-100" alt="Image 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="ms-4">
+                    <h3>Moderáció semmittevése</h3>
+                    <p>
+                        A Platformba Vetett Bizalom Aláásása A Roblox azzal építette fel hírnevét, hogy biztonságos teret biztosít a kreativitásnak és a közösségépítésnek. Az explicit szerepjátékok jelenléte aláássa ezt a bizalmat, és akár a platform hírnevének károsodásához is vezethet a szülők, gondviselők és fejlesztők körében. A közösség a felhasználók által létrehozott tartalomra épít, de ha ezt a tartalmat felnőttek céljaira használják ki, akkor az egész platform integritása veszélybe kerül.
+                    </p>
+                </div>
+            </li>
+
+            <li class="d-flex align-items-center mb-4">
+                <div id="carousel4" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/subdivision1.png" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/subdivision2.png" class="d-block w-100" alt="Image 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="ms-4">
+                    <h3>Toxikus viselkedés</h3>
+                    <p>
+                        Toxikus Viselkedés és Közösségi Hatások Azok a közösségek, amelyek lehetővé teszik a nem megfelelő tartalom elterjedését, gyorsan toxikussá válhatnak. Az explicit viselkedések normalizálódása egy olyan térben, amely kiskorúak számára készült, hozzájárulhat a pozitív közösségi interakciók megszűnéséhez, ezzel csökkentve a játékosok számára nyújtott élmény értékét és biztonságosságát.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

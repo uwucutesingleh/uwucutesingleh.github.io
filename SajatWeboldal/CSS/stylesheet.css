@@ -1,61 +1,85 @@
 /*Header*/
 #header {
-	background:url(../kepek/bg-header.jpg);
-	height:130px;
+    background-color: #1d3c6a;
+    background-image: url(../kepek/bg-header.jpg);
+    background-size: cover;  
+    background-blend-mode: overlay;  
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
+
 #header div {
-	margin:0 auto;
-	overflow:hidden;
-	padding:0 0 0 29px;
-	width:931px;
-}
-#header div ul {
-	float:right;
-	list-style:none;
-	margin:0;
-	overflow:hidden;
-	padding:0;
-}
-#header div ul li {
-	float:left;
-	height:130px;
-	text-align:center;
-	width:110px;
-}
-#header div ul li a {
-	color:#787b66;
-	display:block;
-	height:130px;
-	letter-spacing:.075em;
-	line-height:150px;
-	text-align:center;
-	text-decoration:none;
-	text-shadow:0 1px 0 #fff;
-	width:110px;
-}
-#header div ul li.selected a {
-	background:url(../kepek/bg-nav-selected.png) repeat-x;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 #header div a#logo {
-	display:block;
-	float:left;
-    margin:25px 0 0;
+    display: block;
+    margin: 15px 50px 0 0; 
 }
 
+#header div a#logo img {
+    max-height: 100px;
+    width: auto;
+    display: block;
+    margin-top: -10px;  
+}
+
+#header div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;  
+}
+
+#header div ul li {
+    height: 130px;
+    text-align: center;
+}
+
+#header div ul li a {
+    color: #f2f2f2;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    height: 100%;
+    padding: 0 10px;
+}
+
+#header div ul li.selected a {
+    background: url(../kepek/bg-nav-selected.png) repeat-x;
+    color: #1bb5ac;  
+}
+
+#header div ul li a:hover {
+    color: #1bb5ac;  
+}
 /* Kulso*/
 body {
-	margin:0;
-	font-family:Arial, Helvetica, sans-serif;
-	background:url(../kepek/bg-body.jpg);
-	font-size:12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: url(../kepek/bg-body.jpg);
+    color: #959595;
 }
 a {
-	outline:none;
+    text-decoration: none;
+    color: #787b66;
+    outline: none;
 }
-a img {
-	border:0;
-	display:block;
+a:hover {
+    color: #1bb5ac;
+}
+img {
+    display: block;
+    border: 0;
 }
 p {
 	font-size:12px;
@@ -76,94 +100,175 @@ p a {
 }
 
 #body.home .blog {
-	overflow:hidden;
+    display: flex;
+    margin-top: 45px;
+    gap: 20px;
 }
+
 #body.home .blog > img {
-	display:block;
-	float:left;
-	margin:45px 0 0;
+    width: 300px; 
+    height: auto;
 }
+
 #body.home .blog div {
-	float:right;
-	padding:5px 0 0;
-	width:430px;
+    width: calc(100% - 320px); 
+    padding: 5px 0 0;
 }
-#body.home .blog div img {
-	display:block;
-	margin:0 0 0 28px;
-}
+
 #body.home .blog div h3 {
-	color:#e49e06;
-	font-family:anticregular;
-	font-size:20px;
-	font-weight:400;
-	letter-spacing:.1em;
-	line-height:24px;
-	margin-bottom:3px;
-	text-align:right;
-	text-indent:110px;
+    color: #e49e06;
+    font-family: anticregular;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 24px;
+    margin-bottom: 3px;
+    text-align: left; 
+    text-indent: 0; 
 }
+
 #body.home .blog div p {
-	margin:0;
-	text-align:right;
+    margin: 0;
+    text-align: justify;
 }
+
+/* Article Section */
 #body.home .article {
-	margin:63px 0 0;
-	overflow:hidden;
+    display: flex;
+    margin-top: 63px;
+    gap: 20px;
 }
-#body.home .article div {
-	float:left;
-	padding:0 0 0 25px;
-	width:465px;
-}
-#body.home .article div h3 {
-	color:#e49e06;
-	font-family:anticregular;
-	font-size:20px;
-	font-weight:400;
-	letter-spacing:.1em;
-	line-height:24px;
-	margin:6px 0 3px;
-	text-align:left;
-}
-#body.home .article div p {
-	margin:0 0 24px;
-	text-align:left;
-}
+
 #body.home .article > img {
-	display:block;
-	float:right;
-	margin:0 44px 0 0;
+    width: 300px; 
+    height: auto;
+}
+
+#body.home .article div {
+    width: calc(100% - 320px);
+    padding-left: 25px;
+}
+
+#body.home .article div h3 {
+    color: #e49e06;
+    font-family: anticregular;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 24px;
+    margin: 6px 0 3px;
+    text-align: left; 
+    text-indent: 0; 
+}
+
+#body.home .article div p {
+    margin: 0 0 24px;
+    text-align: justify;
 }
 #body.subdivisions ul li {
-	margin:0 0 40px;
-	overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
+
+/* Text section styles */
+#body.subdivisions ul li .ms-4 {
+    width: 50%; /* Adjust width of text area */
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Carousel section (images) alignment */
+#body.subdivisions ul li .carousel {
+    width: 45%; /* Adjust width of carousel to allow space for text */
+    margin-left: 20px; /* Add some space to the left of the images */
+}
+
+/* Ensure the carousel images align on the right */
+#body.subdivisions ul li .carousel-inner {
+    position: relative;
+}
+
+/* Adjust heading style to fit the new layout */
+#body.subdivisions ul li h3 {
+    color: #e49e06;
+    font-family: 'anticregular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    line-height: 24px;
+    margin-top: 14px;
+}
+
+/* Adjust text styling to be justified */
+#body.subdivisions ul li p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Adjust the carousel controls to match the color scheme */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
+
+/* For smaller screens, make the carousel and text stack vertically */
+@media (max-width: 768px) {
+    #body.subdivisions ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ensure the carousel and text take up full width */
+    #body.subdivisions ul li .carousel {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #body.subdivisions ul li .ms-4 {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Adjustments for individual subdivision parts */
 #body.subdivisions ul li div {
-	float:left;
-	margin:0 45px 0 0;
-	width:585px;
+    float:left;
+    margin:0 45px 0 0;
+    width:585px;
 }
+
 #body.subdivisions ul li div p {
-	margin:6px 0 0;
-	text-align:justify;
+    margin:6px 0 0;
+    text-align:justify;
 }
+
 #body.subdivisions ul li > a {
-	float:right;
+    float:right;
 }
+
 #body.subdivisions ul, #body.blog > div:first-child > ul {
-	list-style:none;
-	margin:0;
-	padding:0;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
+
 #body.subdivisions ul li div h3 {
-	color:#e49e06;
-	font-family:anticregular;
-	font-size:20px;
-	font-weight:400;
-	letter-spacing:.05em;
-	line-height:24px;
-	margin:14px 0 0;
+    color:#e49e06;
+    font-family:anticregular;
+    font-size:20px;
+    font-weight:400;
+    letter-spacing:.05em;
+    line-height:24px;
+    margin:14px 0 0;
+}
+#body.subdivisions h1 {
+    color: #e74c3c;  
+    font-size: 36px;  
+    font-weight: 700;  
+    text-align: center;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	text-decoration: underline;
 }
 #header div ul li.selected a, #header div ul li a:hover {
 	color:#1bb5ac;
